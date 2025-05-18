@@ -19,7 +19,11 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
+WebUI.maximizeWindow()
+
 WebUI.navigateToUrl('https://patch.farvisioncloud.com/')
+
+WebUI.delay(2)
 
 WebUI.setText(findTestObject('Object Repository/CRM/General/Login/Page_Farvision/input_Welcome to Farvision_txtusername'), 
     'uat42.crm')
